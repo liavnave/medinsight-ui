@@ -1,0 +1,122 @@
+@import '../../common/styles/variables';
+
+.header {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+   a {
+     color: $text-color;
+     text-decoration: none;
+   }
+}
+
+.header-home {
+  background-color: $secondary-bg-color;
+}
+
+.header__button-dashboard {
+  margin-left: 10px;
+}
+
+.header-bank {
+  .header__button-bank {
+    color: $secondary-text-color;
+
+    &:hover {
+      background-color: $bg-color;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header__button-dashboard {
+    background-color: $bg-color;
+
+    &:hover {
+      background-color: $bg-color;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header__button-add {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.header-dashboard {
+  .header__button-bank {
+    background-color: $bg-color;
+
+    &:hover {
+      background-color: $bg-color;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header__button-dashboard {
+    color: $secondary-text-color;
+
+    &:hover {
+      background-color: $bg-color;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .header__button-add {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.header__title {
+  height: 45px;
+  margin: auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 4vw;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.header__main-title {
+  height: 45px;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  display: flex;
+}
+
+.header__second-title {
+  height: 45px;
+  margin-left: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.header__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4vw;
+}
+
+.header__button {
+  border-radius: 50px;
+  padding: 10px 20px;
+  &:hover {
+    cursor: pointer;
+    background-color: $secondary-bg-color-hovered;
+  }
+}

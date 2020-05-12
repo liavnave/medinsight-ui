@@ -1,0 +1,100 @@
+@import '../../common/styles/variables';
+
+.bank {
+  background-color: $bg-color-gray;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  flex: 1 1 calc(100vh - 120px);
+}
+
+.bank-table {
+  padding: 2vh 4vw;
+  flex: 1 1 40vh;
+
+  .react-fluid-table {
+    border: none;
+    background-color: $bg-color-gray;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+  }
+
+  .react-fluid-table-header {
+    background-color: $bg-color-gray;
+  }
+
+  .header-cell-text {
+    font-size: 12px;
+  }
+
+  .cell {
+    flex: 1 1 auto;
+    display: inline-block;
+    align-content: center;
+    background-color: $bg-color;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: $font-size-m;
+  }
+}
+
+.bank-table__sub {
+  padding: 10px;
+  font-size: $font-size-m;
+}
+
+.bank-title {
+  display: flex;
+  flex-direction: column;
+  margin: 4vw;
+}
+
+.bank-title__text {
+  font-size: $font-size-xl;
+  font-weight: bold;
+}
+
+.bank-title__description {
+  font-size: $font-size-l;
+}
+
+.bank-input {
+  width: 100vw;
+  position: relative;
+  margin: 0 4vw;
+}
+
+.bank-input__text {
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  width: 60vw;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.bank-input__icon {
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  left: 15px;
+  top: 12px;
+  background-image: url('../../common/svg/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bank-table__read {
+  color: #1FAFF3;
+
+  &:hover {
+    color: #1FAFF3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

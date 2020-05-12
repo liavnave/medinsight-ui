@@ -1,2 +1,52 @@
-# medinsight-ui
-As doctors, nurses and medical teams all over the world fight to defeat the Corona virus and save lives, they are facing daily choices which have different outcomes. They have different conclusions, course of action and do’s and don’t which they can assist others. If one person said a specific treatment worked it is one thing but if thousands said so - that data is worth knowing and sharing and can have great impact on how medical teams across the world combat COVID-19 and save lives.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The project was implemented as a front-end part for HACKORONA competition.
+
+## Project Structure
+```
+medinsight-ui
+├── README.md
+├── package.json
+├── yarn.lock
+├── scr
+    ├── common
+    ├── components
+    ├── context
+    ├── services
+    ├── App.js
+    ├── App.scss
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── serviceWorker.js
+    ├── setupTests.js
+
+```
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn start`
+
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
+
+### `yarn test`
+
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `yarn build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.

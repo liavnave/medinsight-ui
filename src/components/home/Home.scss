@@ -1,0 +1,145 @@
+@import "../../common/styles/variables";
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.header__logo {
+  position: absolute;
+  right: 10vw;
+  height: 35vw;
+  width: 35vw;
+  background-image: url('../../common/svg/home.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-description {
+  position: relative;
+  width: 100vw;
+  height: 35vw;
+  background-color: $secondary-bg-color;
+  overflow-y: hidden;
+
+  svg {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 30vw;
+  }
+}
+
+.home-description__content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-left: 5vw;
+  z-index: 1;
+}
+
+.home-description__buttons {
+  display: flex;
+  flex-direction: row;
+
+  .home-description__add-button {
+    font-size: $font-size-l;
+    padding: 10px 20px;
+    flex: 0 1 auto;
+    border-radius: 50px;
+    margin-left: 0;
+    margin-top: 2vw;
+    z-index: 1;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.home-description__text {
+  font-size: $font-size-m;
+}
+
+.home-latest-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-latest-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-latest-posts__title {
+  display: flex;
+  justify-content: center;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+}
+
+.home-latest-posts__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 5vw;
+}
+
+.home-latest-posts__post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 38vw;
+  max-width: 38vw;
+  padding-bottom: 5vh;
+  max-height: 38vw;
+
+  &:before {
+    position: absolute;
+    z-index: -1;
+    background-color: $secondary-bg-color-hovered;
+    left: -2vw;
+    top: -1vw;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    content: '';
+  }
+
+  &:nth-child(even) {
+    margin-left: 5vw;
+  }
+
+  &:nth-child(odd) {
+    border-right: 1px solid #E7E8EA;
+    padding-right: 5vw;
+  }
+}
+
+.home-latest-posts__post-title {
+  flex: 0 0 auto;
+  font-size: $font-size-l;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.home-latest-posts__post-text {
+  flex: 0 1 auto;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.home-latest-posts__post-footer {
+  flex: 1 1 auto;
+  font-style: italic;
+}

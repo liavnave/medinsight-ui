@@ -1,0 +1,93 @@
+@import '../../common/styles/variables';
+
+.add-post-modal__footer-contact {
+  font-size: $font-size-m;
+  background-color: $secondary-bg-color;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $secondary-bg-color-hovered;
+  }
+}
+
+.post-modal__header-text {
+  flex: 1 1 auto;
+  font-size: $font-size-l;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #3A4356;
+}
+
+.post-modal__context {
+  display: flex;
+  overflow: auto;
+  flex: 1 1 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: $font-size-m;
+  color: #5B6372;
+}
+
+.post-modal__location {
+  font-weight: bold;
+}
+
+.post-modal__profession {
+  font-weight: bold;
+}
+
+.post-modal__content {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  margin: 20px 0;
+  border-bottom: 1px solid #EDEEF1;
+  padding-bottom: 10px;
+}
+
+.post-modal__content-post {
+  flex: 1 1 70%;
+}
+
+.post-modal__content-comments {
+  flex: 0 0 30%;
+  padding-left: 20px;
+}
+
+.post-modal__date, .post-modal__category {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.post-modal__date-icon {
+  flex: 0 0 24px;
+  height: 24px;
+  background-image: url('../../common/svg/calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.post-modal__category-icon {
+  flex: 0 0 24px;
+  height: 24px;
+  background-image: url('../../common/svg/cubeset.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.post-modal__date-title, .post-modal__category-title {
+  margin: 5px 15px 5px 0;
+  flex: 0 0 40px;
+}
+
+.post-modal__date-text, .post-modal__category-text {
+  flex: 1 1;
+  white-space: nowrap;
+}

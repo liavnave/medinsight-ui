@@ -1,0 +1,47 @@
+@import "../../common/styles/variables";
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.dashboard__iframe {
+  background-color: #F4F4F8;
+  width: 92vw;
+  height: 2500px;
+  border: none;
+  padding: 2vh 4vw;
+}
+
+.dashboard-title {
+  background-color: #F4F4F8;
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 4vw 0;
+}
+
+.dashboard-title__text {
+  font-size: $font-size-xl;
+  font-weight: bold;
+}
+
+.dashboard-title__description {
+  font-size: $font-size-l;
+}
+
+.dashboard-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.dashboard-title__icon {
+  height: 20px;
+  width: 170px;
+  margin: 20px 0 0 auto;
+  background-image: url('../../common/svg/sisense.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

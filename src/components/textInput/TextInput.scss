@@ -1,0 +1,36 @@
+@import '../../common/styles/variables';
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  color: #3A4356;
+}
+
+.text-input--flex {
+  flex: 1 1 auto;
+}
+
+.text-input__title {
+  display: flex;
+  font-weight: bold;
+  margin: 20px 5px 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+textarea.text-input__input {
+  flex: 1 1 auto;
+  resize: none;
+}
+
+.text-input__input {
+  background-color: #F4F4F8;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+
+  &:focus {
+    outline: none;
+  }
+}

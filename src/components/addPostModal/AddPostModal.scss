@@ -1,0 +1,80 @@
+@import '../../common/styles/variables';
+
+.add-post-modal {
+  height: 70vh;
+  width: 70vw;
+  padding: 20px;
+}
+
+.add-post-modal__header {
+  display: flex;
+  flex: 0 0;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-post-modal__header-text {
+  flex: 1 1 auto;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.add-post-modal__header-image {
+  flex: 0 0 20px;
+  height: 20px;
+  background-image: url('../../common/svg/close.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.add-post-modal__context {
+  overflow: auto;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-post-modal__context-left {
+  height: 100%;
+  flex: 1 1 40%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.add-post-modal__context-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1 1 calc(60% - 1px);
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.add-post-modal__context-divider {
+  height: calc(100% - 40px);
+  flex: 0 0 1px;
+  background-color: #E7E8EA;
+}
+
+.add-post-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 0;
+}
+
+.add-post-modal__footer-publish {
+  background-color: $secondary-bg-color;
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+
+  &:hover {
+    background-color: $secondary-bg-color-hovered;
+  }
+}

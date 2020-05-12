@@ -1,0 +1,19 @@
+@import './common/styles/variables.scss';
+@import './common/styles/common';
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100vw;
+}
+
+.app {
+  color: $text-color;
+  width: 100vw;
+  font-size: $font-size-l;
+  display: flex;
+  flex-direction: column;
+}

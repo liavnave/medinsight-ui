@@ -1,0 +1,33 @@
+@import '../../common/styles/variables';
+
+.comments {
+  display: flex;
+  max-height: 100%;
+  flex-direction: column;
+  font-size: $font-size-m;
+}
+
+.comments__comment {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #EDEEF1;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.comments__comment-author {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.comments__comment-date {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.comments__comment-content {
+
+}
